@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        *{
+            font-family:arial;
+        }
+        .navbar{
+            width:700px;
+            height:60px;
+            background-color:#008fd5;
+            margin:100px auto;
+
+        }
+        .navbar ul{
+            margin:0;
+            display:flex;
+            line-height:60px;
+        }
+        .navbar ul li{
+           list-style:none;
+        }
+        .navbar ul li a{
+           color:#fff;
+           text-decoration:none;
+           margin-left:15px;
+        }
+
+        .navbar ul li a:hover{
+            color:#000;
+        }
+
+        .navbar ul ul{
+        position:absolute;
+        background:#fff;
+        display:block;
+        margin:0;
+        padding:15px;
+        line-height:30px;
+        box-shadow:0px 8px 15px #0000003b;
+        opacity:0;
+        visibility: hidden;
+        transition: 0.5s ease;
+        transform: translateY(15px);
+        }
+
+        .navbar ul li:hover ul{
+            opacity:1;
+        visibility: visible;
+        transition: 0.5s ease;
+        transform: translateY(0px);
+        }
+        .navbar ul ul li a{
+          color:#000;
+          
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programs</a>
+                <ul>
+                    <li><a href="#">3ds max</a></li>
+                    <li><a href="#">4d cinema</a></li>
+                    <li><a href="#">Motionbulder</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Plugins</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
